@@ -1,0 +1,55 @@
+<div class="fullpage">
+    <div class="movie-form">
+        <h1>Add Movie</h1>
+        <form [formGroup] = "myReactiveForm" (ngSubmit) = "onSubmitReactiveForm()">
+            <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" id="title" formControlName="title">
+
+                <span class="errorMsg" *ngIf="getTitle.touched && getTitle.invalid">
+                    <span *ngIf="getTitle.errors?.['required']">Title is required</span>
+                    <span *ngIf="getTitle.errors?.['maxlength']">Title exceed the character limit (100 characters)</span>
+                </span>
+            </div>
+
+            <div class="form-group">
+                <label for="overview">Overview</label>
+                <textarea name="" id="overview" cols="30" rows="1" formControlName="overview"></textarea>
+
+                <span class="errorMsg" *ngIf="getOverview.touched && getOverview.invalid">
+                    <span *ngIf="getOverview.errors?.['required']">Overview is required</span>
+                    <span *ngIf="getOverview.errors?.['maxlength']">Overview exceed the character limit (1000 characters)</span>
+                </span>
+            </div>
+    
+            <!-- <div class="form-group">
+                <label for="genre">Genre</label>
+                <input type="text" id="genre" formControlName="genre">
+
+                <span class="errorMsg" *ngIf="getGenre.touched && getGenre.invalid">
+                    <span *ngIf="getGenre.errors?.['required']">Genre is required</span>
+                </span>
+            </div> -->
+    
+            <div class="form-group">
+                <label for="releaseDate">Release Date</label>
+                <input type="date" id="releaseDate" formControlName="releaseDate">
+
+                <span class="errorMsg" *ngIf="getReleaseDate.touched && getReleaseDate.invalid">
+                    <span *ngIf="getReleaseDate.errors?.['required']">Release Date is required or Invalid data format</span>
+                </span>
+            </div>
+    
+            <div class="form-group">
+                <label for="posterUrl">Poster Image URL (Optional)</label>
+                <input type="url" id="posterUrl" formControlName="posterUrl">
+
+                <!-- <span class="errorMsg" *ngIf="getPosterUrl.touched && getPosterUrl.invalid">
+                    <span *ngIf="getPosterUrl.errors?.['pattern']">Invalid Url format</span>
+                </span> -->
+            </div>
+    
+            <button type="submit" [disabled]="myReactiveForm.invalid">Add Movie</button>
+        </form>
+    </div>
+</div>

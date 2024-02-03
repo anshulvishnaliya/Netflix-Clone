@@ -1,0 +1,11 @@
+<section class="movies" *ngIf="searchKey">
+    <h2>Search Result</h2>
+
+    <h2 class="noResultH2" *ngIf="searchResult.length === 0; else results">
+        No results found for '{{ searchKey }}'
+    </h2>
+
+    <ng-template #results>
+        <ng-image-slider [images]="searchResult" (imageClick)="SearchResultImageDetail($event)" #nav></ng-image-slider>
+    </ng-template>
+</section>

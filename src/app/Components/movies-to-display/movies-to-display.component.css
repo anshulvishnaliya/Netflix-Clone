@@ -1,0 +1,10 @@
+.movies {
+    padding: 40px;
+    background-color: #000;
+    color: #fff;
+}
+
+.movies h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}

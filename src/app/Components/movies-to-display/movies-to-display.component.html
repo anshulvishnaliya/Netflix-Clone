@@ -1,0 +1,29 @@
+<section class="movies" *ngIf="myAddedMovies.length > 0">
+    <h2>My Movies</h2>
+    <ng-image-slider [images]="myAddedMovies" (imageClick)="MyMoviesImageDetail($event)" #nav></ng-image-slider>
+</section>
+
+<section class="movies">
+    <h2>Trending Movies</h2>
+    <ng-image-slider [images]="trendingMovies" (imageClick)="TrendingImageDetail($event)" #nav></ng-image-slider>
+</section>
+
+<section class="movies">
+    <h2>Now Playing Movies</h2>
+    <ng-image-slider [images]="nowPlayingMovies" (imageClick)="NowPlayingImageDetail($event)" #nav></ng-image-slider>
+</section>
+
+<section class="movies">
+    <h2>Popular Movies</h2>
+    <ng-image-slider [images]="popularMovies" (imageClick)="PopularImageDetail($event)" #nav></ng-image-slider>
+</section>
+
+<section class="movies">
+    <h2>Top Rated Movies</h2>
+    <ng-image-slider [images]="topRatedMovies" (imageClick)="TopRatedImageDetail($event)" #nav></ng-image-slider>
+</section>
+
+<section class="movies">
+    <h2>Upcoming Movies</h2>
+    <ng-image-slider [images]="upcomingMovies" (imageClick)="UpcomingImageDetail($event)" #nav></ng-image-slider>
+</section>
