@@ -1,27 +1,33 @@
-# MovieProject
+# Netflix Clone
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.0.
+Welcome to Netflix Clone, a project that brings the Netflix experience to your fingertips. This application is a movie searching site inspired by Netflix, featuring various sections such as Trending Movies, Now Playing Movies, Popular Movies, Top Rated Movies, and Upcoming Movies. All movie data is retrieved in real-time from the TMDB API, ensuring an up-to-date collection.
 
-## Development server
+## Functionalities
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+1. **Movie Details:**
+   - Click on any movie to view detailed information, including its description and release date.
 
-## Code scaffolding
+2. **Search Functionality:**
+   - Use the search feature to find movies quickly. The search results will be displayed in a dedicated section for easy access.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+3. **Add Movie:**
+   - Add your favorite movies to the collection. The added movies will be accessible in the "My Added Movies" section.
 
-## Build
+## Live Movie Database
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+All movie information is sourced from TMDB (The Movie Database), ensuring a comprehensive and up-to-date movie database.
 
-## Running unit tests
+## Developer
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+This project is developed and maintained by Anshul Vishnaliya.
 
-## Running end-to-end tests
+## How to Use
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Local Development:
 
-## Further help
+1. Clone the repository.
+2. Install dependencies with `npm install`.
+3. Run the development server with `ng serve`.
+4. Navigate to [http://localhost:4200/](http://localhost:4200/) to access the application.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Feel free to explore the various sections and functionalities to enjoy the Netflix-like experience with your favorite movies.
